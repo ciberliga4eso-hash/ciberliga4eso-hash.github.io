@@ -1,1 +1,9 @@
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.header{
+    background-color: #e5ff00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex: 1;
+}
