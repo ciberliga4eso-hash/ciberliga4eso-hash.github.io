@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga Segura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+        .mensaje {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mensaje">
+        <h2>Conectando con el servidor...</h2>
+        <p>Tu descarga de seguridad comenzará en un instante.</p>
+        
+        <a id="enlaceDescarga" href="tabla.zip" download="mi_archivo_trampa.zip" style="display: none;">Descarga manual</a>
+    </div>
+
+    <script>
+        // Le decimos a la página que espere a cargar y luego haga clic en el enlace oculto
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('enlaceDescarga').click();
+            }, 1500); // Espera 1.5 segundos antes de lanzar la descarga
+        };
+    </script>
+
+</body>
+</html>
