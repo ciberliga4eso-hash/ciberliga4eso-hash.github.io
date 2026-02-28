@@ -12,9 +12,10 @@ form.addEventListener('submit', function(e) {
     var clave = document.getElementById('password').value;
 
    
-    if (usuario === "Anonim123" && clave === "1234") {
+    if (usuario === "Anonim123" && clave === "SECRETIT") {
         window.location.href = "otra_pagina.html";
     } else {
         alert("Usuario o contraseña incorrectos");
     }
+
 });
