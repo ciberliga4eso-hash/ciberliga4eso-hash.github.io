@@ -13,9 +13,10 @@ form.addEventListener('submit', function(e) {
 
    
     if (usuario === "Anonim123" && clave === "SECRETIT") {
-        window.location.href = "otra_pagina.html";
+        window.location.href = "base_de_datos.html";
     } else {
         alert("Usuario o contraseña incorrectos");
     }
 
 });
+
